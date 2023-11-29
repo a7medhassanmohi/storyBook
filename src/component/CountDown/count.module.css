@@ -1,0 +1,27 @@
+.timer_container{
+    display: flex;
+}
+.icon{
+    margin-inline-end: 5px;
+    >svg{
+        color: rgb(129, 3, 3);
+    }
+}
+.start{
+    >svg{
+        animation: rotate 1.2s  ease-in-out alternate-reverse infinite;
+
+    }
+}
+.stop{
+    animation: none;
+}
+@keyframes rotate {
+    0% {
+        transform: rotate(0deg);
+    }
+    
+    100% {
+        transform: rotate(360deg);
+    }
+}
